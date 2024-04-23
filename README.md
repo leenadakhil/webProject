@@ -306,7 +306,7 @@ body {
 
 
 
-# webProject
+# Index page
 //HTML 
 //Index(home) Page - Html - By Ghaida
 
