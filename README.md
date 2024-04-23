@@ -306,3 +306,126 @@ body {
 
 
 
+# webProject
+//HTML 
+//Index(home) Page - Html - By Ghaida
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web project</title>
+    <style>
+        body {
+            background-color: beige;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .product-item img {
+            width: 400px;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="fashion-designer.html">Fashion Designer</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>A fashion design site - your first choice for designing your clothes</h1>
+            <h2>Welcome to the fashion design site</h2>
+        </section>
+        <section class="products">
+            <article class="product-item">
+                <img src="C:\Users\ghaid\OneDrive\Desktop\web\1.jpg" alt="The designer">
+                <h3>Fashion Designer Sara</h3>
+                <p></p>
+                <button type="button">Request</button>
+            </article>
+            <article class="product-item">
+                <img src="C:\Users\ghaid\OneDrive\Desktop\web\2.jpeg" alt="The designer">
+                <h3>Fashion Designer Fatima</h3>
+                <p></p>
+                <button type="button">Request</button>
+            </article>
+            <article class="product-item">
+                <img src="C:\Users\ghaid\OneDrive\Desktop\web\3.jpg" alt="The designer">
+                <h3>Fashion Designer Noura</h3>
+                <p></p>
+                <button type="button">Request</button>
+            </article>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
