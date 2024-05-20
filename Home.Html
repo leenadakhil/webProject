@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <header id="header">
+
+        <nav>
+
+            <!-- <img src="css/LOGOL.png" alt="Site Logo"> -->
+
+            <div class="dropdown">
+                <button class="dropbtn">MENU</button>
+                <div class="dropdown-content">
+                    <a href="#">HOME</a>
+                    <a href="#">ALL DRESSES</a>
+                    <a href="Requests.Html">REQUESTS</a>
+                    <a href="Login.Html">LOGIN</a>
+                    <a href="#">CONTACT US!</a>
+                </div>
+            </div>
+
+
+            <!-- New search field -->
+            <div class="search-container">
+                <form id="search-form">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <button type="submit">SEARCH</button>
+                </form>
+            </div>
+
+        </nav>
+    </header>
+    <div id="search-results"></div>
+
+
+    <main>
+        <div class="container">
+            <div class="header">
+                <h1>Welcome to the fashion design site</h1>
+                <p>Find your perfect dress today!</p>
+            </div>
+            <div class="main">
+                <div class="product">
+                    <img src="css/One.jpg" alt="Dress 1">
+                    <h2>Fashion Designer Leena</h2>
+                    <p>$50</p>
+                    <a href="Requests.html" class="request-button">Request</a> <!-- Updated button with href attribute -->
+                </div>
+                
+                <div class="product">
+                    <img src="css/2.jpeg" alt="Dress 2">
+                    <h2>Fashion Designer Ghaida</h2>
+                    <p>$60</p>
+                    <a href="Requests.html" class="request-button">Request</a> <!-- Updated button with href attribute -->
+                </div>
+
+                <div class="product">
+                    <img src="css/3.jpg" alt="Dress 3">
+                    <h2>Fashion Designer Reem</h2>
+                    <p>$60</p>
+                    <a href="Requests.html" class="request-button">Request</a> <!-- Updated button with href attribute -->
+                </div>
+
+            </div>
+            <div class="footer">
+                <div class="about-us">
+                    <h2>About Us</h2>
+                    <p>Welcome to Our Store! We are passionate about fashion design and committed to providing you with
+                        the perfect dress for any occasion. With our talented designers and high-quality materials, we
+                        aim to exceed your expectations and make your fashion dreams a reality. Explore our collection
+                        and discover the perfect dress for you!</p>
+                </div>
+                <div class="bottom-content">
+                    <div class="rights">
+                        <p>&copy; 2024 Our Store. All rights reserved.</p>
+                        <p>LEENA & GHAIDA</p>
+                    </div>
+                    <div class="contact-us">
+                        <p>Contact Us:</p>
+                        <div class="contact-links">
+                            <a href="https://wa.me/yourwhatsappnumber" target="_blank"><i
+                                    class="fab fa-whatsapp"></i></a>
+                            <a href="https://twitter.com/yourtwitterhandle" target="_blank"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="mailto:analeena2018@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Welcome to Our Store!</h2>
+                    <p>We are excited to have you here, explore our made-for-you dresses, otherwise we will definitely
+                        make them for you!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- <style>
+        body {
+            font-family: serif;
+            margin: 0;
+            padding: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:%230abab5;stop-opacity:1" /><stop offset="100%" style="stop-color:%23ff99c8;stop-opacity:1" /></linearGradient></defs><path d="M0,50 C30,80 70,20 100,50 L100,100 L0,100 Z" fill="url(%23grad1)" /></svg>') repeat-x;
+            background-size: cover;
+        }
+    </style> -->
+
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var header = document.getElementById("header");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
+
+        // Sample array of products (you'll replace this with your actual product data)
+        var products = [
+            { name: "Order Now!", designer: "Fashion Designer Leena" },
+            { name: "Order Now!", designer: "Fashion Designer Ghaida" },
+            { name: "Order Now!", designer: "Fashion Designer Reem" }
+        ];
+
+        // Function to filter products based on search query
+        function searchProducts(query) {
+            query = query.toLowerCase();
+            return products.filter(function (product) {
+                return product.name.toLowerCase().includes(query) || product.designer.toLowerCase().includes(query);
+            });
+        }
+
+        function displaySearchResults(results) {
+            var resultContainer = document.getElementById("search-results");
+            resultContainer.innerHTML = ""; // Clear previous results
+            results.forEach(function (product) {
+                var productElement = document.createElement("div");
+                productElement.classList.add("product");
+                productElement.innerHTML = "<h2>" + product.name + "</h2><p>" + product.designer + "</p>";
+
+                // Create "Request" button with link to Requests page
+                var requestButton = document.createElement("button");
+                requestButton.textContent = "Request";
+                requestButton.addEventListener("click", function () {
+                    window.location.href = "Requests.html"; // Link to Requests page
+                });
+                productElement.appendChild(requestButton);
+
+                resultContainer.appendChild(productElement);
+            });
+        }
+
+
+
+        // Handle form submission
+        document.getElementById("search-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form submission
+            var searchInput = document.getElementById("search-input").value;
+            var searchResults = searchProducts(searchInput);
+            displaySearchResults(searchResults);
+        });
+
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the page loads, display the modal
+        window.onload = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
