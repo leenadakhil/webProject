@@ -15,10 +15,18 @@ Our goal is to satisfy our customers with clothes that fit them perfectly and wi
 
 Our store screenshots: 
 
+Home Page:
+<img width="951" alt="Our store " src="https://github.com/leenadakhil/webProject/assets/158042500/487cf0f4-9ed4-4c18-8fb7-97c85a7d0f1a">
+
+<img width="866" alt="aaaaa" src="https://github.com/leenadakhil/webProject/assets/158042500/f0c2e6cf-f92a-4d8c-8ea8-22b6a12593cd">
+
+when Search:
 
 <img width="946" alt="our store " src="https://github.com/leenadakhil/webProject/assets/158042500/d970be32-b430-4bf9-857c-b2857bf16355">
 
-<img width="951" alt="Our store " src="https://github.com/leenadakhil/webProject/assets/158042500/487cf0f4-9ed4-4c18-8fb7-97c85a7d0f1a">
+<img width="945" alt="aaa store" src="https://github.com/leenadakhil/webProject/assets/158042500/8a0b65bc-0cdc-44e4-b143-f8a08f748c1a">
+
+
 
 
 Future Work :
