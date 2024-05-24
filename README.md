@@ -1,5 +1,6 @@
 FASHION DESIGN SITE !
 
+
 Overview :
 We are a store that provides you with choosing your clothes according to your desire, in the colors and fabric you want, and according to what suits your size, so it will definitely be made for you!
 
@@ -15,12 +16,13 @@ Our goal is to satisfy our customers with clothes that fit them perfectly and wi
 Our store screenshots: 
 
 
+<img width="946" alt="our store " src="https://github.com/leenadakhil/webProject/assets/158042500/d970be32-b430-4bf9-857c-b2857bf16355">
+
+<img width="951" alt="Our store " src="https://github.com/leenadakhil/webProject/assets/158042500/487cf0f4-9ed4-4c18-8fb7-97c85a7d0f1a">
 
 
-
-
-
-
+Future Work :
+In the future, we aspire for our site to become every girl’s destination, and to develop the site amazingly until it becomes of the highest possible quality. We also aspire to constantly develop it to suit the trend.
 
 
 Team Members :
