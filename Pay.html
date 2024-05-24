@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page for Al Rajhi Account</title>
+    <link rel="stylesheet" href="css/Pay.css">
+</head>
+<body>
+    <div class="container">
+        <img src="css/rajhi_logo.png" alt="Al Rajhi Bank Logo" class="logo">
+        <div class="account-info">
+            <p><strong>Bank Account Number:</strong> 1234 5678 9012 3456</p>
+            <p><strong>IBAN:</strong> SA12 3456 7890 1234 5678 9012</p>
+        </div>
+        <form action="process_payment.php" method="post" enctype="multipart/form-data" class="payment-form">
+            <div class="form-group">
+                <label for="payment_proof">Upload a PDF file or image  as proof of payment:</label>
+                <input type="file" name="payment_proof" id="payment_proof" accept=".pdf, image/*" required>
+            </div>
+            <button type="submit" formaction="Completed.html">Confirm Payment</button>
+        </form>
+    </div>
+</body>
+</html>

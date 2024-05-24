@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Measurements Form</title>
+    <link rel="stylesheet" href="css/HomeRequests.css">
+</head>
+<body>
+
+<div class="box">
+    <h1>Requests Form</h1>
+    <form action="submit_measurements.php" method="post">
+        
+        <label for="age_group">Select Age Group:</label>
+        <select id="age_group" name="age_group" required>
+            <option value="" disabled selected>Select Age Group</option>
+            <option value="child">Child</option>
+            <option value="woman">Woman</option>
+        </select><br><br>
+
+        <label for="age_group">Select Type of Fabrics:</label>
+        <select id="age_group" name="age_group" required>
+            <option value="" disabled selected>Select Type of Fabrics</option>
+            <option value="Cotton">Cotton</option>
+            <option value="Wool">Wool</option>
+            <option value="Silk">Silk</option>
+            <option value="Satin">Satin</option>
+            <option value="Chiffon">Chiffon</option>
+            <option value="Crepe">Crepe</option>
+        </select><br><br>
+
+            <label for="delivery_date">Desired arrival date:</label>
+            <input type="date" id="delivery_date" name="delivery_date">
+   
+            <label for="delivery_time">Desired arrival time:</label>
+            <input type="time" id="delivery_time" name="delivery_time">
+     
+
+            <label for="quantity">Number of teams :</label>
+            <input type="number" id="quantity" name="quantity" min="1">
+         
+            <label for="quantity">Number of client:</label>
+            <input type="number" id="quantity" name="quantity" min="1">
+
+            <label for="notes">Notes:</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+        
+
+        <form action="imaginarydesign.php" method="post" enctype="multipart/form-data" class="design-form">
+            <div class="form-group">
+                <label for="imaginary-design">Upload a PDF file or image imaginary design:</label>
+                <input type="file" name="imaginary-design" id="imaginary-design" accept=".pdf, image/*" required>
+            </div>
+        </form>
+
+
+        <button type="submit" formaction="Pay.html">Request</button>
+    </form>
+</div>
+
+</body>
+</html>
